@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage{tgschola}             % favourite font
+\usepackage[T1]{fontenc}          % required with font packages
+\usepackage[section]{placeins}    % keep figures in the section where
+                                  % they're referenced
+\usepackage[scaled=0.9]{DejaVuSansMono}           % DejaVuSans font for code
+%%\usepackage{natbib}               % reference style
+%%\bibpunct{(} {)} {;} {a} {} {,}   % citation formatting
+\usepackage[margin=1in]{geometry} % document size
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\usepackage[dvipsnames]{xcolor}
+
+\def\Rcolor{\color{black}}
+\def\Routcolor{\color{black}}
+\def\Rcommentcolor{\color{BrickRed}}
+\def\Routbackground{\color{white}}
+\def\Rbackground{\color[gray]{0.95}}
+\def\Sweavesize{\normalsize}
+
+\lstdefinestyle{Rstyle}{fancyvrb=false,escapechar=`,language=R,%
+                        basicstyle={\Rcolor\Sweavesize\ttfamily},% some want \ttfamily too
+                        backgroundcolor=\Rbackground,%
+                        showstringspaces=false,%
+                        keywordstyle=\color{blue},%
+                        commentstyle={\Rcommentcolor\ttfamily},%
+                        alsoother={$},%
+                        alsoletter={.<-},%
+                        otherkeywords={!,!=,~,$,*,\&,\%/\%,\%*\%,\%\%,<-,<<-,/},%
+                        escapeinside={(*}{*)},
+                        frame=single,framerule=0.2pt,framesep=3pt}%
+
+\title{Document Title}
+\author{Author Name}
+
+\begin{document}
+
+\maketitle{}
+
+%% replace.assign converts = to -> where appropriate
+%% width limits the width of the R output to something easily displayed
+%% on a printed page. include=FALSE hides this from the output
+%% render_listings() turns on the LaTeX listings package
+<<formatting,include=FALSE>>=
+options(replace.assign=TRUE, width=68)
+opts_chunk$set(tidy = FALSE)
+render_listings()
+@ 
+
+%% insert a \FloatBarrier wherever you want to clear floats from the
+%% previous section  
+\FloatBarrier                           
+%% \bibliographystyle{sysbot2}
+%% \bibliography{ab,ty2}
+
+\end{document}
+
+%% \Sexpr{## inline r-code goes here}
+
+%% <<chunk-name,options>>=
+%% R code goes here
+%% @ 
+%% 
+%% chunk name can include alphanumeric, '-' and '_'. Other symbols or
+%% spaces cause problems.
+%% 
+%% options can be separated by a space, but no line breaks in the chunk header!
+%% 
+%% some key options and their defaults:
+%% eval=TRUE or FALSE - run code? TRUE
+%% echo=TRUE or FALSE - display code in output? TRUE
+%% include=TRUE or FALSE - display chunk in output? TRUE
+%% results=markup, asis, hold, hide - how to process output. markup is
+%% default, provides output interleaved with source code, formatted.
+%% warning=TRUE or FALSE - display warnings from R? TRUE
+%% message, error - as for warning
+%% cache=TRUE or FALSE - store code evaluations, only evaluate when the
+%% code changes? FALSE
+
+%% Figures:
+%% Many options available: see http://yihui.name/knitr/options
+
+%% <<figure-title,fig.align='center', fig.height=4.5,fig.width=5, out.width=3, fig.cap='My caption, inside single quotes. Backslashes must be doubled \\emph{like this}'>>=
+%% plot(iris)
+%% @ 
+
+%% generated label will be fig:figure-title
+
+%% Emacs ESS commands:
+%% M-n s -- to knit: create the tex file: file.Rnw -> file.tex
+%% M-n P -- after knitting, produce the pdf output: file.tex -> file.pdf
+%% M-n u -- to purl: extract the R code: file.Rnw -> file.R
+%% < -- open a new chunk

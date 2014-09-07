@@ -1,8 +1,9 @@
 # Site wide configuration
 
-title:            Site Title
+title:            plantarum.ca
 locale:           en_US
-url:              http://localhost:4000
+#url:              http://localhost:4000
+url:              //plantarum.ca
 
 
 # Jekyll configuration
@@ -26,22 +27,23 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email: 
+  name: Tyler Smith
+  avatar: tybio.jpg
+  bio: "Plant taxonomist<br>Adjunct professor<br>Field botanist"
+  email: tyler@plantarum.ca
   disqus-shortname: 
-  twitter: #username
-  facebook: #username
+  twitter: sedgeboy
   google:
-    plus: #username
+    plus:
     analytics: 
     verify: 
     ad-client: 
     ad-slot: 
   bing-verify: 
-  github: #username
-  stackoverflow: #http://stackoverflow.com/users/123456/username
+  github: plantarum
+  flickr: https://www.flickr.com/photos/carex/
+  stackoverflow: https://stackoverflow.com/users/523044/tyler
+  bitbucket: https://bitbucket.org/tws
   linkedin: #username
   instagram: #username
   lastfm: #username
@@ -50,6 +52,34 @@ owner:
   foursquare: #username
   steam: #username
   dribbble: #username
+
+author:
+  name: Tyler Smith
+  avatar: tybio.jpg
+  bio: "Plant taxonomist<br>Adjunct professor<br>Field botanist"
+  email: tyler@plantarum.ca
+  disqus-shortname: 
+  twitter: sedgeboy
+  google:
+    plus:
+    analytics: 
+    verify: 
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: plantarum
+  flickr: https://www.flickr.com/photos/carex/
+  stackoverflow: https://stackoverflow.com/users/523044/tyler
+  bitbucket: https://bitbucket.org/tws
+  linkedin: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

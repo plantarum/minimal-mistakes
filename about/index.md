@@ -1,25 +1,33 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, responsive]
-modified: 2014-08-08T20:53:07.573882-04:00
-comments: true
+title: Tyler Smith
+tags: [about]
 image:
-  feature: texture-feature-02.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+  feature: daucus.jpg
+#  credit: Texture Lovers
+#  creditlink: http://texturelovers.com
 ---
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
+I am a plant taxonomist and conservation biologist. I work for Agriculture
+and Agrifood Canada, where I am responsible for researching the Taxonomy of
+Canadian Native Crops. I am also an adjunct professor in the Biology
+department at Carleton University. This is my personal website, and the
+views expressed here are my own. What you find here are my own ideas on
+plant taxonomy research, field botany, and related items. The sorts of
+things that will show up here: teaching notes, working keys, software
+tools, and comments on the practice and products of plant taxonomy.
 
-## Minimal Mistakes is all about:
+## More about me
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
+- [my publications](http://scholar.google.ca/citations?user=LPgEa6UAAAAJ)
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+- [my photos](http://www.flickr.com/photos/carex/)
+
+- [my work webpage](http://www4.agr.gc.ca/AAFC-AAC/display-afficher.do?id=1313520025104&amp;lang=eng)
+
+- [my Carleton webpage](http://carleton.ca/biology/people/tyler-smith-2/)
+
+- for secure correspondence:
+  - PGP ID: 107943BA
+  - fingerprint: E1E7 89D0 3BF9 7226 6866 49F7 4777 89F0 1079 43BA
+

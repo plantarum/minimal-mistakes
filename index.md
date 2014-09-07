@@ -1,9 +1,10 @@
 ---
 layout: home
-excerpt: "A responsive Jekyll theme with editorial tendencies by designer Michael Rose."
-tags: [Jekyll, theme, responsive, blog, template]
+excerpt: "Plant systematics research"
+# tags: [Jekyll, theme, responsive, blog, template]
 image:
-  feature: texture-feature-01.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+    feature: daucus.jpg
+#  feature: texture-feature-01.jpg
+#  credit: Texture Lovers
+#  creditlink: http://texturelovers.com
 ---

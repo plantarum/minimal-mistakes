@@ -1,0 +1,59 @@
+
+1. Purchase the droplet
+   - 32GB RAM, 12 CPUs, Debian 7 x64
+2. Login as root
+   - password is emailed to you
+   - ssh root@104.131.222.81
+3. Change root password
+4. Add regular user
+   adduser tyler (enter password)
+5. Generate ssh key on local computer
+   - ssh-keygen -t rsa
+   - passphrase is not necessary here
+6. Transfer key to cloud host
+   - ssh-copy-id tyler@104.131.222.81
+   - you need to enter the password for this user
+7. Test logging in:
+   ssh tyler@104.131.222.81
+8. If you login successfully without a password, the rsa key is properly
+   installed
+9. On the remote machine, su to root user, edit /etc/ssh/sshd_config
+   - PermitRootLogin no (only login as normal user)
+   - PasswordAuthentication no (only login via ssh key, no passwords)
+   - To use X:
+     - /etc/ssh/ssh_config
+     - ForwardX11 yes
+10. Reload ssh
+   /etc/init.d/ssh reload
+
+11. Install necessary programs:
+    aptitude
+    u (update)
+    g g (install security updates)
+
+    install other programs:
+    grass
+    emacs
+    screen and/or tmux
+    htop
+    avce00
+    e00compr
+    git
+    mercurial
+    xorg
+
+12. Make grassdata directory in ~/ on remote machine
+
+13. Transfer files from local to remote:
+    rsync -az --progress --compresslevel=9 --partial grassdata/trich_ast_ll tyler@104.131.222.81:grassdata/
+
+    z is important -compress files before sending them, reduces transit
+    times by 2/3s!
+
+14. When you're ready, run screen
+    - key point - C-a d will detach the session, allowing you to log out
+      and leave the processes running. `screen -r` reattaches to the last
+      detached session.
+
+15. Run GRASS!
+    - r.slope.aspect, 500MB of RAM
