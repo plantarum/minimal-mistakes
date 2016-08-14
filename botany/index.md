@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Botany
-modified: 2014-08-14
+modified: 2016-08-13
 excerpt: "Botanical Resources"
 image:
     feature: daucus.jpg
@@ -24,4 +24,9 @@ except for _Cyperus_. _Cyperus_ isn’t online, so it will have to be added
 by hand. All the rest of the sedges are there now. The next step will be
 checking for translation errors, and rationalizing the keys.
 
-- [OntarioCyperaceae](/assets/docs/OntarioCyperaceae.pdf) (March 18, 2013)
+UPDATE: August 13, 2016
+{: .notice}
+
+I added the _Cyperus_ key by hand, and corrected ca. 25 species that didn't get imported properly from the FNA webpages.
+
+- [OntarioCyperaceae](/assets/docs/OntarioCyperaceae.pdf) (August 13, 2016)

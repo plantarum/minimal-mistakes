@@ -4,8 +4,6 @@ title: Tyler Smith
 tags: [about]
 image:
   feature: daucus.jpg
-#  credit: Texture Lovers
-#  creditlink: http://texturelovers.com
 ---
 
 I am a plant taxonomist and conservation biologist. I work for Agriculture
@@ -18,6 +16,8 @@ things that will show up here: teaching notes, working keys, software
 tools, and comments on the practice and products of plant taxonomy.
 
 ## More about me
+
+- my email: tyler AT plantarum • ca
 
 - [my publications](http://scholar.google.ca/citations?user=LPgEa6UAAAAJ)
 
